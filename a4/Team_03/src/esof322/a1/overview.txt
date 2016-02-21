@@ -1,0 +1,49 @@
+Team 3: Megan Weller, Ashley Bertrand, and Sheila Tupker
+
+Megan:
+I contributed by making the constructor, the scale() method and the equals() method as well as
+the unit test for scale() and equals(). I was having problems with the equals() method
+and was using AssertEquals(). Ashley helped me solve it so I was able to get it to run
+correctly. I was also having issues with opening the demo on d2l and wasn't able to see it.
+
+
+    Time Spent: 75 minutes at most
+
+Ashley:
+I made the add(), dot(), and toString() methods and tests.  The methods were fairly straight forward.
+I did have some problems with some of the assert statements until I implemented them using the equals() 
+method.  I also had to Google how to write an assertEquals() for a method that returns a double; the 
+only difference was I needed to add another parameter.
+
+This was my first experience with Github, so it took a little bit of time figuring out how to clone, pull, 
+commit, and push.
+
+I also tried to rename our test package and was not able to, nor was I able to open the demo project on d2l.
+
+    Time Spent: 60 minutes
+
+Sheila:
+This was a challenging assignment for me.  
+
+We each had three methods to complete.  
+
+My methods were the following:
+negate()
+magnitude()
+scale()
+
+My experiences: 
+GitHub -
+I had never used GitHub.  There was a definite learning curve involved with this tool.  
+
+Junit - 
+I had never even heard of this tool.  Really amazing tool to compare actual and expected results.  
+
+Vectors - 
+I had never worked with vectors before and had no idea Java had a Vector3D to hold data.
+
+Overall - 
+Massive learning lesson for me.  Even though we were coding in Java knowing how to code for the vectors and the asserts took some time to figure out.  I like that the code was relatively minimal and it wasn’t too difficult to code once I got the just of what was expected.
+
+     Time spent: 180 minutes
+    

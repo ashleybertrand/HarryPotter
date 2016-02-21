@@ -1,0 +1,244 @@
+Ashley Bertrand and Megan Weller
+
+Ashley:
+My main responsibilities in this assignment were to implement the functionality for grab() and drop().  
+One of the hardest parts of the assignment was having to jump into a bunch of code that I was not familiar 
+with (because I didn't write it), and then making sense of all the class relationships.  At times, I found 
+it difficult trying to maintain the model/view separation for displaying the messages in accordance with 
+the current conditions.
+
+I made a few assumptions regarding the implementation of these methods (which are also listed as comments 
+in the code).  If there is more than one item that can be 'grabbed' or 'dropped', the player will grab or 
+drop the first one listed.  Also, with regards to the carryingArea display, it will always show what is 
+currently being carried, but individual messages (ie. "The room is empty.") do not get updated until the 
+next time 'grab' or 'drop' is clicked.
+
+For formatting purposes, I added two methods in the Player class.  I also decided to make the game and room 
+descriptions a little more interesting by spreading my love for Harry Potter.
+
+The most difficult part about finishing this assignment was due to our team falling apart towards the beginning
+of the project.  Initially, our problems arose from a lack of communication/assignment delegation, but grew to
+more serious issues involving incorrect allegations and hurtful accusations, where Megan and I decided we could
+no longer work in such an environment.  We were able to pick up from where we left off on our individual work
+and make up for the loss of a teammate to finish the assignment ourselves.
+
+Total Time Spent: ~600 minutes
+
+Megan:
+My main responsibilities of the project were to a)connect the directional buttons b)connect the getView() and 
+c)show the key view.
+
+a & b) This was the easiest part of the coding for me personally. I did have to go through and find how the
+buttons were connected to the old interface and figure out how to connect them to the new GUI. It took me awhile
+to see how all the classes are related, but the UML chart helped a lot. To avoid repetition, I added a enterRoom()
+method to enter, set location, and check if the user was running into walls. 
+
+c)The key view is the most difficult part for me. I struggled with where to put the getView() and if there were
+any conditions to get that view. I was first trying to see if when they approached the door, it would distinguish
+whether is was in fact a Door versus a Room. In the end, I set the descriptions in the enter() method in class Door.
+I know that it would eventually enter that method once they approached the Door. Once you are in the room, it will
+set a key description that would tell the user they are either unable to go in or they have and they are locked in.
+
+I agree with Ashley that in the beginning we should have had an initial plan and been in communication with 
+each other from the get go. The whole issue has been a big misunderstanding. If assumptions and hurtful allegations 
+were not made, I think our team would have worked out, but I believe it may be for the best that Ashley and I work
+on our own. We were able to complete the others tasks that were assigned to Sheila and the UML diagram.
+
+
+Total Time Spent: ~480 minutes
+
+Our Map:
+Our maze is based off the world of Harry Potter, but it uses the same map and commands as the original maze.
+
+
+*Sheila created the "Ouch! There's a wall!" implementation
+
+Transcript of commit log:
+
+commit 1a34676a7e29370416bbc2f992142b75a77b598b
+Author: meganweller21 <mweller213@gmail.com>
+Date:   Mon Sep 28 11:37:12 2015 -0600
+
+    Added more into overview, added last comments, and changed some room descriptions.
+
+commit 9968c45a5bb464b25c0b6e6df3a0549fab352c52
+Author: ashleybertrand <ashleykaybertrand@gmail.com>
+Date:   Mon Sep 28 01:00:58 2015 -0600
+
+    Variety of changes including adding UML pdf, changing room descriptions, adding comments, and finalizing overview.txt.
+
+commit ac0ec3c0129aba8edfcbf4b960e87972de61b592
+Author: meganweller21 <mweller213@gmail.com>
+Date:   Sun Sep 27 20:42:30 2015 -0600
+
+    Added my comments and overview.txt
+
+commit 48818ad22748d7eff52d8fa31ea09d56381e68fd
+Author: meganweller21 <mweller213@gmail.com>
+Date:   Sun Sep 27 20:12:11 2015 -0600
+
+    Key works yay!
+
+commit 2bcc5b3d7d1a6a052755db550a12c229833ebc7d
+Author: meganweller21 <mweller213@gmail.com>
+Date:   Sun Sep 27 18:10:09 2015 -0600
+
+    Code for key, not complete
+
+commit 07291a420f6e0d1c2ba19d3022575d7d43167e41
+Merge: dbd3ad1 68a0e7c
+Author: meganweller21 <mweller213@gmail.com>
+Date:   Sun Sep 27 15:39:53 2015 -0600
+
+    Merge origin/master
+    
+    Conflicts:
+        src/esof322/a2/AdventureGameModelFacade.java
+        src/esof322/a2/Door.java
+
+commit dbd3ad13b54893f95767c150529d198909f0f954
+Author: meganweller21 <mweller213@gmail.com>
+Date:   Sun Sep 27 15:21:26 2015 -0600
+
+    Key is kinda working and I have a good idea and where it's going but it still needs to be fixed.
+
+commit 68a0e7c806f00c77c09aeb7d864ee1910b2ab444
+Author: ashleybertrand <ashleykaybertrand@gmail.com>
+Date:   Sun Sep 27 15:04:47 2015 -0600
+
+    Formatting code, adding to overview.txt, making a few comments.
+
+commit 208e0549a8b2e4292c6a2e99134332dd6f37d349
+Merge: e1de842 277b1ae
+Author: ashleybertrand <ashleykaybertrand@gmail.com>
+Date:   Sun Sep 27 14:30:16 2015 -0600
+
+    Merge origin/master
+
+commit e1de842fe14bfd9fa06bc45b01e56c69fcd43c5a
+Author: ashleybertrand <ashleykaybertrand@gmail.com>
+Date:   Sun Sep 27 14:28:57 2015 -0600
+
+    Made it so carryingArea always shows the current items along with any other messages.
+
+commit 277b1ae57c9f79931d939e618183fda57740a7f4
+Merge: bf10a85 9a59b00
+Author: meganweller21 <mweller213@gmail.com>
+Date:   Sun Sep 27 12:38:26 2015 -0600
+
+    I merged with origin. The key part still needs to be changed!!!! Adding in a simple method so it's not too messy
+
+commit bf10a85be39af7ef51141a9a08fb09fa04091c2e
+Author: meganweller21 <mweller213@gmail.com>
+Date:   Sun Sep 27 12:26:04 2015 -0600
+
+    Added a few different things like methods to make it simple. Still struggling with the key part, there is a part of the code that does not work but I made a comment above it.
+
+commit e7f8b54084798e627a0f33868b06dd2918259ae9
+Author: meganweller21 <mweller213@gmail.com>
+Date:   Sun Sep 27 12:22:32 2015 -0600
+
+    Added a few different things like methods to make it simple. Still struggling with the key part, there is a part of the code that does not work but I made a comment above it.
+
+commit 9a59b00e205d3e77f338399acf133ea76a6393e6
+Author: ashleybertrand <ashleykaybertrand@gmail.com>
+Date:   Sun Sep 27 12:05:36 2015 -0600
+
+    Fixed implementation with drop() and grab() for two items.
+
+commit acec3401be4d3bee0c18fa6810df2f0b664d5bc0
+Author: ashleybertrand <ashleykaybertrand@gmail.com>
+Date:   Sun Sep 27 11:22:16 2015 -0600
+
+    Fixed carryingArea display for dropping an item.
+
+commit 212a36a92a6afd6bec52a5a7273d1dde1706c042
+Author: ashleybertrand <ashleykaybertrand@gmail.com>
+Date:   Fri Sep 25 01:27:58 2015 -0600
+
+    Implemented "Room is empty" and "Hands are full".  First commit for drop().
+
+commit 4c5dab224099ff45329ec2bab392e1d8c473e2ea
+Author: ashleybertrand <ashleykaybertrand@gmail.com>
+Date:   Thu Sep 24 11:02:49 2015 -0600
+
+    The view didn't get pushed in previous commit.
+
+commit 425b9617b0a26d68af36ec3f9bd5c4734c05a7fb
+Author: ashleybertrand <ashleykaybertrand@gmail.com>
+Date:   Thu Sep 24 01:05:18 2015 -0600
+
+    First grab() commit.  Functionality works until Treasure gets involved.
+
+commit 9e0afcbfbb6c1d2e41b01be42051fffb3a3709c6
+Author: meganweller21 <mweller213@gmail.com>
+Date:   Wed Sep 23 15:36:11 2015 -0600
+
+    comments
+
+commit 2e045c76813d2b535cb9a73a913266b2618ec5ca
+Author: meganweller21 <mweller213@gmail.com>
+Date:   Wed Sep 23 15:34:48 2015 -0600
+
+    Revert "Comments, Wall view, and buttons. I changed my comments because I can't copy and paste correctly I guess, added in Sheila's wall implementation in buttons, and added in the room description after hitting a wall. Otherwise, the user may forget the description. "
+    
+    This reverts commit b03f7bc33899cf3800738fb28430e5a769c3d443.
+
+commit b03f7bc33899cf3800738fb28430e5a769c3d443
+Author: meganweller21 <mweller213@gmail.com>
+Date:   Wed Sep 23 11:28:09 2015 -0600
+
+    Comments, Wall view, and buttons. I changed my comments because I can't copy and paste correctly I guess, added in Sheila's wall implementation in buttons, and added in the room description after hitting a wall. Otherwise, the user may forget the description.
+    
+    Plus, we don't really need AdventureGame... I commented out the main driver  in that class because it is messing with my Netbeans.
+
+commit 0b201c9d8b9ad5f2adfb0f30cee594baa91bc7c4
+Author: Sheila <sheila.tupker@msu.montana.edu>
+Date:   Tue Sep 22 19:47:17 2015 -0600
+
+    Ouch is now working and being displayed for the GUI up button.  Next step is to add this funcitonality to the other directional buttons.
+
+commit 640c02f43a970ea194dcd7a6b1a2b14c09fa9372
+Author: meganweller21 <mweller213@gmail.com>
+Date:   Tue Sep 22 13:41:32 2015 -0600
+
+    Added some comments and deleted unneeded implementation.
+
+commit b79387e5fc37aae851c2d1956c20f400888f6bfd
+Author: meganweller21 <mweller213@gmail.com>
+Date:   Sat Sep 19 15:20:12 2015 -0600
+
+    Added a lot, add functions to getView(), and all directional buttons. Trying to find where to put the locked door description.
+
+commit 9ae09fcec9b417cf6ccd493a276b1a4aad099206
+Author: astro_sheila <astro_sheila@192.168.1.100>
+Date:   Fri Sep 18 20:37:48 2015 -0600
+
+    GUI directional buttons working.  Changed description room text for r1.  Room descriptions get updated and displayed.
+
+commit 85f5da0e0449bd194ab12c3f4dfed61a01f7fd5d
+Author: astro_sheila <astro_sheila@192.168.1.100>
+Date:   Fri Sep 18 18:33:06 2015 -0600
+
+    Linked BreezySwing library and added some necessary files.  Program is running.
+
+commit 7dd53c8e3e6b04d219e18bb0fd931756d3537e60
+Merge: c618478 85ec379
+Author: ashleybertrand <ashleykaybertrand@gmail.com>
+Date:   Thu Sep 17 21:11:51 2015 -0600
+
+    Setting up AdventureGame project
+
+commit c61847814fb9e56f9eba421a0e5918741297107f
+Author: ashleybertrand <ashleykaybertrand@gmail.com>
+Date:   Thu Sep 17 20:40:11 2015 -0600
+
+    Setting up AdventureGame project
+
+commit 416e773affc441423954d2836e6fa44058ee4ecf
+Author: ashleybertrand <ashleykaybertrand@gmail.com>
+Date:   Thu Sep 17 20:11:20 2015 -0600
+
+    Setting up AdventureGame project
+
+
